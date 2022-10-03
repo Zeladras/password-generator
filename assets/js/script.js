@@ -2,6 +2,7 @@
 var characterLength = 8;
 var choices = [];
 
+//All the different options
 var number = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialchar = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
 var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -30,6 +31,7 @@ generateBtn.addEventListener("click", writePassword); {
   document.getElementById("password").placeholder = ps;
 }
 
+// Function that creates a math equation that combines all the options
 function generatePassword() {
   var password = "";
 
@@ -40,6 +42,7 @@ function generatePassword() {
   return password;
 }
 
+//Function that give the options for what your password will contain
 function getPrompts() {
   choices = [];
 
